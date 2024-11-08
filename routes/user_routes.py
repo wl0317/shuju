@@ -437,7 +437,7 @@ def audit_drama():
         return jsonify({"code": "500", "message": str(e), "time": current_time}), 500
 
     finally:
-        db.close()  # 确保数据库连接在处理完成后关闭
+        db.close()  # 数据库连接在处理完成后关闭
 
 
 if __name__ == '__main__':
